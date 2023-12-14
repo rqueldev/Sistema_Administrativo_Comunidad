@@ -1,0 +1,131 @@
+body{
+    background-color: #f5f5f5f5;  
+}
+
+.nav-pills li a:hover {
+    background-color: rgb(107, 21, 187);
+}
+
+.nav-pills .dropdown-menu li a:hover {   /*Para el submenu de jornadas del sidebar*/
+    color: white !important;  
+}
+
+.bgside__bar{
+    background:blueviolet;
+}
+
+.navbar-brand__img{
+width: 50px;
+}
+
+.logo__s{
+    font-family: 'Dancing Script', cursive; 
+}
+
+.user img{
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;  
+}
+
+.user img:hover{
+    width: 48px;
+    height: 48px;
+    cursor: pointer;  
+}
+
+ul li .boton-manzana:active{   /*No funciona ni aqui ni js*/
+    background-color: rgb(107, 21, 187);
+}
+
+
+
+
+.bajar{
+    translate: 0 88px !important;
+}
+
+
+.mover-derecha{
+    translate: 136px 0px;
+}
+
+.mover-derecha-tabla{
+    translate: 80px 60px;
+}
+
+.tarjeta .card:hover{
+    background: linear-gradient(to right,#ff00ff, blueviolet); 
+    cursor: pointer; 
+}
+
+.card:hover .number{
+    color: #fff;
+}
+.card:hover .lider-name{
+    color: #fff;
+}
+
+.card:hover .icon-box i{
+    color: #fff;
+}
+
+.number{
+    font-size: 30px;
+    font-weight: 500;
+    color: blueviolet;
+}
+.lider-name{
+    color: #888;
+    font-weight: 600; 
+
+}
+.icon-box{
+    height: 40px;
+    width: 40px ;
+}
+
+
+/* --------------- Tabla ---------------- */
+
+.mover-derecha-tabla img{
+    translate: 100px 50px;
+}
+
+.line{
+	width: 100%;
+	height: 4px;
+	border: 0 none;
+	margin: 1rem 0;
+	background-color: rgb(128, 128, 128);
+}
+
+.boton-añadir{
+    background-color: blueviolet;
+    color: white;
+}
+
+table thead {
+    background-color: rgb(255, 179, 0);
+}
+
+.tablita{
+    padding-top: 10px;
+}
+
+.tablita table{
+    border-color: lightgrey;
+}
+
+/* --------------- Modal ---------------- */
+.modal-header{
+   /* background-color: blueviolet;*/
+    background: linear-gradient(to right, blueviolet, #ff00ff); 
+    color: white;
+}
+
+.modal-body .modal_imagen{
+    position: relative;
+    left: 36.5%;
+    width: 27%;
+}

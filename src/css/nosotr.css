@@ -1,0 +1,471 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f5f5f5f5;  
+    position: relative;
+    padding-bottom: 20vh;
+    min-height: 100vh;
+}
+
+/*----------------Navegación----------------*/
+.barra{
+    background: linear-gradient(to right,#ff00ff,blueviolet, aquamarine); 
+}
+.navbar-brand__img{
+    width: 50px;
+} 
+
+.navbar-brand__logo{
+	width: 33%;
+}
+.logo__s{
+    font-family: 'Dancing Script', cursive; 
+}
+nav a{
+	color: black;
+}
+.navegacion nav .registro, .inicio, .nosotros{
+    transition: all 0.5s ease; /*para que no sea muy brusco*/
+}
+
+.navegacion nav .registro:hover{
+	color: rgb(108, 204, 248);
+	background: black;    
+	border-radius: 15px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.navegacion nav .inicio:hover{
+	color: rgb(108, 255, 235);
+	background: black;    
+	border-radius: 15px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.navegacion nav .nosotros:hover{
+	color: aquamarine;
+	background: black;    
+	border-radius: 15px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.navegacion nav .nosotros{
+	color: aquamarine;
+	background: black;    
+	border-radius: 15px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+/* ---------------- Pie de Pagina ----------------------*/ 
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   /* top: 35vh;*/
+  /*  translate: 0px 220px;*/
+	height: 20vh;
+	background-color: blueviolet;
+
+}
+
+/* ---------------- ACCORDEON ----------------------*/ 
+.bajar{
+    margin-top: 7%;
+}
+
+
+/*------------- Item 1 Historia---------------*/
+
+.contenido img{
+    width: 45%;
+    height: 45%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+}
+.leerMas_btn{
+    background-color: #ff00ff;
+    border: none;
+    border-radius: 40px;
+    color: white;
+
+    cursor: pointer;
+}
+.leerMas_btn:hover{
+    background-color: black;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+/*------------ Item 2 Ubicación ----------------*/
+.Ajustar1{
+    display: flex;
+    flex-direction:column;
+   }
+.permanente-ajuste{
+    display: flex;
+    flex-direction: column;
+}
+.contenido1 .img-mapa{
+    width: 60%;
+    height: 60%;
+    padding-left: 2%;
+}
+.contenido1 .img-historia{
+    width: 45%;
+    height: 40%;
+    margin-left: 30%;
+}
+.contenido1 h1{
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 10%;
+}
+/*----------- Item 3 Misión y Visión-----------------*/
+
+.contenido2 img{
+    width: 65%;
+    height: 65%;
+}
+.bg-seccionP{
+    background: linear-gradient(to right, #53c8ff, rgb(63, 247, 164));
+    border-radius: 30px 0px 0px 0px;
+    margin-right: 1%;
+}
+
+.bg-seccionP h1{
+    padding-right: 2%;
+}
+
+.bg-seccionS{
+    background: linear-gradient(to right, #fa766d, rgb(247, 201, 63));
+    border-radius: 0px 0px 30px 0px;
+}
+
+.bg-seccionS h1{
+    padding-right: 2%;
+}
+
+
+
+/*-------------------------Historia---------------------------*/
+
+.typewritter-historia{
+    padding-left: 5%;
+    margin-top: 4%;
+    color: blueviolet;
+    display: block;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 25ch;
+
+    animation: typing 2s steps(25),
+    cursor-historia .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from{width: 0}
+}
+
+@keyframes cursor-historia{
+    50%{border-color: transparent}
+}
+
+/*----------------------------Ubicación Geográfica------------------------*/
+.typewritter{
+    padding-left: 15%;
+    margin-top: 7%;
+    color: blueviolet;
+    display: block;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 30ch;
+
+    animation: typing 2s steps(30),
+    cursor .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from{width: 0}
+}
+
+@keyframes cursor{
+    50%{border-color: transparent}
+}
+
+/*-------------------------Misión---------------------------*/
+
+.typewritter-mision{
+    padding-left: 5%;
+    margin-top: 4%;
+    color: white;
+    display: block;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 8ch;
+
+    animation: typing 1s steps(8),
+    cursor-mision .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from{width: 0}
+}
+
+@keyframes cursor-mision{
+    50%{border-color: transparent}
+}
+
+/*-------------------------Visión---------------------------*/
+
+.typewritter-vision{
+    padding-left: 5%;
+    margin-top: 4%;
+    color: white;
+    display: block;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 7ch;
+
+    animation: typing 1s steps(7),
+    cursor-vision .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from{width: 0}
+}
+
+@keyframes cursor-vision{
+    50%{border-color: transparent}
+}
+
+
+
+/* ______________________________________________________ Media ________________________________________________________*/ 
+
+@media (max-width: 1024.98px) {
+    .bajar{
+        margin-top: 9%;
+    }
+    /*---------Historia-----------*/
+    .contenido img{
+        width: 55%;
+        height: 55%;
+        padding-top: 8%;
+    }
+    /*---------Ubicación-----------*/
+    .contenido1 .img-mapa{
+        width: 70%;
+        height: 70%;
+    }
+    .contenido1 .img-historia{
+        width: 85%;
+        margin-left: 15%;
+    }
+    .typewritter{
+        width: 26ch;
+        animation: typing 2s steps(26),
+    }
+/*---------Misión y Vision-----------*/
+    .contenido2 img{
+        height: 50%;
+        margin-top: 18%;
+    }
+}
+
+
+
+@media (max-width: 991.98px) { /*_____________________________________________________________________________________________________*/
+    .bajar{
+        margin-top: 12%;
+    }
+    .ajustar{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .ajustar2{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+/*---------Historia-----------*/
+   .contenido img{
+    width: 70%;
+    height: 70%;
+    padding-left: 0%;
+   }
+/*---------Ubicación-----------*/
+   .contenido1 .img-mapa{
+    width: 90%;
+    height: 90%;
+    padding-left: 0%;
+  }
+  .contenido1 .img-historia{
+    width: 35%;
+    height: 30%;
+    margin-left: 0%;
+    margin-top: 5%;
+  }
+   .typewritter{
+    width: 29ch;
+    animation: typing 2s steps(29),
+   }
+   .Ajustar1{
+    display: flex;
+    flex-direction:row;
+    height: 20%;
+   }
+/*---------Mision y Vision-----------*/
+   .contenido2 img{
+    height: 40%;
+    width: 90%;
+    margin-top: 0%;
+  }
+}
+
+
+@media (max-width: 767.98px){ /*_____________________________________________________________________________________________________*/
+    .bajar{
+        margin-top: 12%;
+    }
+}
+/*  sin problemas :D */
+
+
+
+@media (max-width: 575.98px){/*_____________________________________________________________________________________________________*/
+    .bajar{
+        margin-top: 15%;
+    }
+
+/* Historia y Ubicación sin problemas :D */
+
+/*---------Mision y Vision-----------*/
+    .contenido2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+   }
+   .contenido2 img{
+    height: 30%;
+    width: 80%;
+    margin-top: 0%;
+  }
+  .bg-seccionP{
+    margin-right: 0%;
+}
+   .ajustar2{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+.typewritter-mision{
+    width: 9ch;
+    animation: typing 1s steps(9),
+}
+.typewritter-vision{
+    width: 9ch;
+    animation: typing 1s steps(9),
+}
+
+}
+
+@media (max-width: 425.98px){/*_____________________________________________________________________________________________________*/
+    .bajar{
+        margin-top: 18%;
+    }
+
+/* --------Historia------------*/
+
+.typewritter-historia{
+    padding-left: 15%;
+    width: 26ch;
+    animation: typing 2s steps(26),
+}
+
+/*---------Ubicación-----------*/
+  .Ajustar1{
+    display: flex;
+    flex-direction:column-reverse;
+    height: 20%;
+   }
+
+   .contenido1 .img-historia{
+    width: 40%;
+    height: 35%;
+    margin-left: 5%;
+    margin-top: 0%;
+   }
+
+/*---------Mision y Vision-----------*/
+    .typewritter-mision{
+        width: 8ch;
+        animation: typing 1s steps(8),
+    }
+    .typewritter-vision{
+        width: 8ch;
+        animation: typing 1s steps(8),
+    }
+}
+
+@media (max-width: 375.98px){/*_____________________________________________________________________________________________________*/
+    .bajar{
+        margin-top: 21%;
+    }
+
+    /* --------Historia------------*/
+
+  .typewritter-historia{
+    padding-left: 10%;
+    width: 24ch;
+    animation: typing 2s steps(24),
+   }
+
+    /*---------Mision y Vision-----------*/
+    .typewritter-mision{
+        width: 7ch;
+        animation: typing 1s steps(7),
+    }
+    .typewritter-vision{
+        width: 7ch;
+        animation: typing 1s steps(7),
+    }
+}
+
+@media (max-width: 320.98px){/*_____________________________________________________________________________________________________*/
+    .bajar{
+        margin-top: 24%;
+    }
+
+ /* --------Historia------------*/
+
+   .typewritter-historia{
+    padding-left: 0%;
+    width: 20ch;
+    animation: typing 2s steps(20),
+    }
+
+ /* --------Ubicación------------*/
+    .contenido1 h1{
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+
+    .typewritter{
+        padding-left: 10%;
+        width: 25ch;
+        animation: typing 2s steps(25),
+    }
+
+}

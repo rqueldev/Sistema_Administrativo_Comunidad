@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrado</title>
+
+    <link rel="stylesheet" href="../src/css/pop-up.css">
+
+    <!-- CSS Bootstrap --->
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="contenedorr">
+        <div class="popup" id="popup">
+            <img src="../src/img/check.png" alt="">
+            <h2>¡Gracias!</h2>
+            <p>El Usuario ha sido registrado satisfactoriamente</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+
+    <!-- JS Bootstrap -->
+    <script src="../src/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+       // let popup = document.getElementById("popup");
+        $(document).ready(
+           
+            function  openPopup(){
+            popup.classList.add("open-popup");
+        }
+        )
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+            window.location.href = "registrarse.php";
+        }
+    </script>
+</body>
+</html>

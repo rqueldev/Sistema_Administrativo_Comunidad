@@ -1,0 +1,108 @@
+body{
+    background-color: #f5f5f5f5;  
+}
+
+.nav-pills li a:hover {
+    background-color: rgb(107, 21, 187);
+}
+
+.nav-pills .dropdown-menu li a:hover {   /*Para el submenu de jornadas del sidebar*/
+    color: white !important;  
+}
+
+.bgside__bar{
+    background:blueviolet;
+}
+
+.navbar-brand__img{
+width: 50px;
+}
+
+.logo__s{
+    font-family: 'Dancing Script', cursive; 
+}
+
+.user img{
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;  
+}
+
+.user img:hover{
+    width: 48px;
+    height: 48px;
+    cursor: pointer;  
+}
+
+ul li .boton-manzana:active{   /*No funciona ni aqui ni js*/
+    background-color: rgb(107, 21, 187);
+}
+
+
+/*Para bajar el contenido del body que se lo comia el nav*/
+.bajar{
+    translate: 0px 88px !important;
+}
+
+.contenido{
+    translate: 70px 0px;
+}
+
+.img_perfil{
+    width: 20%;
+    height: 20%;
+   /* translate: 70px 0px;*/
+}
+
+.boton_perfil{
+    background: linear-gradient(to right, rgb(206, 52, 248), #ff53d7); 
+    color: black;
+    border-radius: 40px;
+    
+}
+
+.boton_perfil:hover{
+    width: 20%;
+}
+
+.boton_contraseña{
+    background: linear-gradient(to right, #fa766d, rgb(247, 201, 63)); 
+    color: black;
+    border-radius: 40px;
+}
+
+.boton_contraseña:hover{
+    width: 30%;
+}
+
+
+/* --------------- Modal ---------------- */
+.modal_perfil{
+     background: linear-gradient(to right, rgb(206, 52, 248), #ff00ff); 
+     color: white;
+ }
+ 
+ .modal_contraseña{
+    background: linear-gradient(to right, #fa766d, rgb(247, 201, 63)); 
+     color: white;
+ }
+ .modal-body .modal_imagen{
+     position: relative;
+     left: 37.5%;
+     /*width: 25%;*/
+     
+ }
+
+
+ /*Eliminar sino lo usas
+.container{
+    transform: translate(7%, 0%);
+
+}
+.container .bienvenido{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+*/
+

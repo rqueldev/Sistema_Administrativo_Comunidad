@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+
+    
+       <!-- CSS Bootstrap --->
+       <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+   
+       <!-- Font Awesome -->
+       <link rel="stylesheet" href="../src/css/all.min.css">
+   
+       <!-- CSS Estilo -->
+       <link rel="stylesheet" href="../src/css/nosotr.css">
+   
+        <!-- Links de Google Fonts para Logo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+</head>
+
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row navegacion">
+            <nav class="navbar navbar-expand-lg navbar-expand-sm shadow fixed-top d-flex justify-content-between barra">
+                <!-- Logo -->
+                <a href="../page/nosotros.html" class="navbar-brand d-flex align-items-center px-2 logo__s">
+                    <img src="../src/img/log.png" alt="logo" class="navbar-brand__img">
+                    <img src="../src/img/logo_name_color1.png" class="navbar-brand__logo" alt="">
+                    <!-- <h5 class="logo-name">Sector Universitario Oeste</h5>-->
+                </a>
+
+                <!-- boton --> 
+                <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </a>
+
+                <!-- Menu de navegacion -->
+                <div class="collapse navbar-collapse justify-content-end px-3" id="menu">
+                    <ul class="navbar-nav list-unstyled menu-opt d-flex align-items-center m-0">
+                        <li class="nav-item d-flex flex-column align-items-center p-2">
+                            <span class="user-check"></span>
+                            <i class="fa-solid fa-address-book p-1"></i>
+                            <a class="text-decoration-none fs-6 lead registro" href="../page/registrarse.php">Registrarse</a>  <!--Adentro le inducaremos que es para lider de manaza-->
+                        </li>
+                        <li class="nav-item d-flex flex-column align-items-center p-2">
+                            <span class="user-sign"></span>
+                            <i class="fa-solid fa-user p-1"></i>
+                            <a class="text-decoration-none fs-6 lead inicio" href="../page/iniciar_sesion.php">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item d-flex flex-column align-items-center p-2">
+                            <span class="about-us"></span>
+                            <i class="fa-solid fa-people-group p-1"></i>
+                            <a class="text-decoration-none fs-6 lead nosotros" href="../page/nosotros.html">Nosostros</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- Accordeon -->
+<div class="row row-cols-1 bajar">
+    <div class="col">
+
+        <div class="accordion" id="accordionExample">
+
+            <!-- Sección 1 -->
+            <div class="accordion-item">
+              <h1 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong class="lead fs-5 ">Historia</strong>
+                </button>
+              </h1>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body px-5 contenido">
+
+                    <div class="d-flex ajustar">
+                        <div >
+                            <span class="lead fw-semibold typewritter-historia">¿Cuál es nuestra Historia?</span>
+                            <h1 class="lead fs-6"><span class="fs-1 lead">L</span>a comunidad Sector Universitario Oeste es una de las comunidades que conforman el Municipio Carirubana, Punto Fijo, Estado Falcón. 
+                                El Sector Universitario debe su nombre a un grupo de estudiantes, quienes en el año de 1986 se encontraban apoyando el asentamiento de varias personas 
+                                necesitadas  de una vivienda propia y digna, ya que en aquel entonces existía un déficit habitacional y fuertes problemas económicos en el país.
+                            </h1>
+                            <h1 class="lead fs-6 pt-2">
+                                Los inicios de la Comunidad junto a las comunidades aledañas, se remontan al comienzo de la década de los años 80. Tras el fallido “Proyecto Habitacional 
+                                Punto Fijo II” (el cual se encuentra ubicado en lo que hoy en día es la Urb. 12 de Octubre y la Urb. María Auxiliadora) y la acentuación de la crisis económica 
+                                en Venezuela, muchas familias esperaban que el gobierno brindara soluciones habitacionales a la población.      
+                            </h1>
+                        </div>
+                        <img src="../src/img/34.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <span class="hide" id="hideText">
+                            <h1 class="lead fs-6">
+                                Sin embargo, el problema habitacional que se vivía, aunado a los rumores de 
+                                posibles invasiones a los terrenos en donde la contratista encargada de la construcción del Hospital Dr. Rafael Calles Sierra guardaba sus maquinarias, 
+                                motivó a vaias familias a asentarse en lo que actualmente se conoce como el Sector Universitario. A pesar de que las condiciones para las mismas no era la adecuada,
+                                la población siguió creciendo y organizandose. Así fue como la voz de los habitantes fue escucada y con ello se concretaron varios proyectos, como un ambulatorio médico, 
+                                calles asfaltadas y otras mejoras para la comunidad; al mismo tiempo que fueron surgiendo nuevos comercios como bodegas, panaderías y verdulerias.Finalmente, se conformaron 
+                                los Consejos Comunales que estarían a cargo de los sectores consolidados.
+                            </h1>
+                        </span>
+            
+                        <button class="px-3 py-2 leerMas_btn" id="hideText_btn">Leer más</button>
+                    </div>
+
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Sección 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <strong class="lead fs-5">Ubicación Geográfica</strong>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body d-flex contenido1 ajustar">
+                    <img src="../src/img/sectorr.jpg"  class="img-mapa pt-4" alt="">
+                    <div class="Ajustar1">
+
+                        <div class="permanente-ajuste">
+                            <span class="lead fw-semibold typewritter">Por si quieres visitarnos . . .</span>
+                            <h1 class="lead fs-6">La comunidad Sector Universitario Oeste se encuentra localizada en el Estado Falcón, especificamnete en el Municipio Carirubana, Punto Fijo.
+                                <br>
+                                <br>
+                                Actualmente se encuentra conformado por 16 manzanas o cuadras, las cuales son dirigidas por jefes de calle y un jefe de comunidad. 
+                            </h1>
+                        </div>
+
+                        <img src="../src/img/historia.webp" class="img-historia pt-3" alt="">
+                    </div>
+
+                </div>
+              </div>
+            </div>
+            
+            <!-- Sección 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <strong class="lead fs-5">Misión y Visión</strong>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body d-flex contenido2">
+
+                    <div class="bg-seccionP p-4 d-flex ajustar">
+                        <div>
+                            <span class="lead fw-semibold typewritter-mision">Misión</span>
+                            <h1 class="lead fs-6 text-white text-center">Promover y consolidar la democracia participativa y protagónica, mediante la promoción y el fortalecimiento de todas aquellas expresiones
+                                organizativas y comunitarias que propicien el ejercicio de la corresponsabilidad social en la gestión pública.
+                            </h1>
+                        </div>
+
+                        <img src="../src/img/capture-20220626-161109.png" alt="">
+                    </div>
+
+                    <div class="bg-seccionS p-4 d-flex ajustar2">  
+                        <div>
+                            <span class="lead fw-semibold typewritter-vision">Visión</span>
+                            <h1 class="lead fs-6 text-white text-center">Ser la instancia incluyente de participación activa que desarrolle, vincule y dirija todos los proyectos 
+                                (ecnonómico, educativo, cultural, deportivo, tecnológico, entre otros) dirigido a impulsar el fortalecimiento de la comunidad.
+                            </h1>
+                        </div>
+
+                        <img src="../src/img/pechakucha.jpg" alt="">
+                    </div>
+
+
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<footer class="pt-4 px-3">
+    <h1 class="lead fs-6 text-center text-white">Av. Rafael González, Sector Universitario, Municipio Carirubana, Edo. Falcón</h1>  
+    <h1 class="lead fs-6 text-center text-white">Sistema para la Comunidad Sector Universitario Oeste</h1>
+    <h1 class="lead fs-6 text-center text-white"><span><i class="fa-regular fa-copyright"></i></span> 2023 UNEFA - Falcón Extensión, Punto Fijo</h1>
+</footer>
+
+
+
+
+    <!-- JS Bootstrap -->
+    <script src="../src/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- JS Propio -->
+    <script>
+        let hideText_btn = document.getElementById('hideText_btn');
+        let hideText = document.getElementById('hideText');
+
+        hideText_btn.addEventListener('click',toggleText);
+        
+        function toggleText(){
+            hideText.classList.toggle('show');
+
+            if (hideText.classList.contains ('show')) {
+                hideText_btn.innerHTML = 'Leer menos';
+            }
+            else{
+                hideText_btn.innerHTML = 'Leer más'; 
+            }
+        }
+    </script>
+    <!---------------------------------------------------------------->
+
+
+
+</body>
+</html>

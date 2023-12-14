@@ -1,0 +1,337 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+} 
+body{
+	background: linear-gradient(to right,#ff00ff,blueviolet, aquamarine);  
+}
+
+.error{
+	/*	background-color: plum;*/
+		font-size: 11px;
+		padding-left: 1rem;	
+	}
+
+/*----------------Popup----------------*/
+
+.popup{
+	width: 400px;
+	background: #ffff;
+	border-radius: 6px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.popup h2{
+    font-size: 30px;
+    font-weight: 500px;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+/*----------------Navegación----------------*/
+.navbar-brand__img{
+    width: 50px;
+}  
+.navbar-brand__logo{
+	width: 33%;
+}
+.logo__s{
+    font-family: 'Dancing Script', cursive; 
+}
+nav a{
+	color: black;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110px;
+}
+.back{
+	display: inline-block;
+	height: 23px;
+	width: 23px;
+	margin: 5px;
+}
+
+
+header nav a{
+    text-decoration: none;
+	font-size: 75%;
+	color: black;
+    transition: all 0.5s ease; 
+}
+header nav a:hover {
+	color: aquamarine;
+	background: black;    
+	border-radius: 15px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+
+/*------------------------Estilos del Formulario-------------------------------*/
+
+.bajar{
+    margin-top: 0.8%;
+}
+.ajustar{
+	display: flex;
+}
+
+main{
+	min-height: 85vh; /*100*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 8.5rem;
+}
+
+.img-inicio img{
+	width: 40%;  /*antes 75%*/
+	opacity: 0.9;
+	position: relative;
+	left: 38.6%;  /*antes 37.1*/
+	border-radius: 20px 0px 0px 20px;
+	visibility: visible;
+}
+.signup-card{
+	width: 370px;  /*antes 450px*/
+	background: rgba(255, 255, 255, .5);
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-left: 3rem;
+	padding-right: 3rem; /*4 rem*/
+	border-radius: 10px;
+	position: relative;
+	right: 46.5%;
+}
+
+.signup-card-logo{
+	margin-bottom: 1rem; /*antes 2 rem*/
+}
+
+.signup-card-logo img{
+	width: 35px; /*antes 60px*/
+}
+
+.signup-card-logo,
+.signup-card-header,
+.signup-card-footer{
+	text-align: center;
+}
+
+.signup-card a{
+	text-decoration: none;
+	color: darkcyan;	
+}
+
+.signup-card a:hover{
+text-decoration: underline;
+}
+
+.signup-card-header{
+	margin-bottom: 2rem; /*2rem*/
+}
+
+.signup-card-header h1{
+	font-size: 1.2rem; /*antes 2 rem*/
+}
+
+.signup-card-header h3{
+	font-size: 0.7rem; /*antes 0.8*/
+}
+
+.signup-card-form{
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.signup-card-form .form-item-item{
+	display: flex;
+	gap: 0.5rem;  /*antes 1.5rem*/
+}
+
+.signup-card-form .form-item-item .items-izquierda{
+	border: none; 
+	outline: none;
+	background: rgba(255, 255, 255, .3);
+	padding: 0.6rem 1.2rem;  
+/*	margin-bottom: 1rem;*/         /*pila*/
+	border-radius: 20px 0px 0px 20px;
+	width: 100%;
+	font-size: 0.7rem;
+}
+
+.signup-card-form .form-item-item .items-derecha{
+	border: none; 
+	outline: none;
+	background: rgba(255, 255, 255, .3);
+	padding: 0.6rem 1.2rem;  
+	/*	margin-bottom: 1rem;*/         /*pila*/
+	border-radius: 0px 20px 20px 0px;
+	width: 100%;
+	font-size: 0.7rem;
+}
+
+.signup-card-form .form-item .items {
+	border: none; 
+	outline: none;
+	background: rgba(255, 255, 255, .3);
+	padding: 0.6rem 1.2rem;  
+	/*	margin-bottom: 1rem;*/         /*pila*/
+	border-radius: 100px;
+	width: 100%;
+	font-size: 0.7rem;  
+}
+
+.signup-card input:focus{
+	background: white;
+}
+
+.signup-card-form button{
+	background: black;
+	color: white;
+	padding: 0.6rem; /*0.8*/
+	border-radius: 100px;
+	text-transform: uppercase;  /*mayuscula*/
+	letter-spacing: 2px;
+    width: 100%;
+	font-size: 0.7rem;  /*nuevo*/
+}
+
+.signup-card-form button:hover{
+	background-color: rgba(0, 0, 0, .85);
+	cursor: pointer;
+}
+
+.signup-card-footer{
+	margin-top: 1.5rem;
+	font-size: 0.7rem; /*antes 0.8*/
+}
+
+
+/* ______________________________________________________ Media ________________________________________________________*/ 
+
+@media (max-width: 1024.98px){
+	.img-inicio img{
+		width: 63%;
+		left: 31.6%; 
+	}
+	.signup-card{
+		right: 7.5%;
+	}
+}
+
+@media (max-width: 991.98px){ /*___________________________________________________________________________________________*/
+	.signup-card{
+		right: 7%;
+	}
+}
+
+@media (max-width: 768.98px){ /*___________________________________________________________________________________________*/
+	.img-inicio img{
+		width: 81.3%; 
+		left: 12%;    
+	}
+	main{
+		padding-right: 1.5rem;
+	}
+}
+
+@media (max-width: 575.98px) {/*___________________________________________________________________________________________*/
+	.bajar{
+		margin-top: 7%;
+	}
+	.ajustar{
+		display: flex;
+		flex-direction:column-reverse;
+	}
+	main{
+		padding-right: 0rem;
+	}
+	.signup-card{ 
+		right: 0%;
+	}
+	.img-inicio img{
+		width: 65.5%; 
+		left: 17.5%;    
+		border-radius: 40px 0px 40px 0px;
+		padding-top: 5%;
+	}
+
+	.img-inicio img{
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 425.98px){ /*___________________________________________________________________________________________*/
+	.navbar-brand{
+		margin: 0%;
+	}
+	.signup-card{
+		width: 330px; 
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		padding-left: 2rem;
+		padding-right: 2rem; 
+	}
+
+
+}
+
+@media (max-width: 375.98px){ /*___________________________________________________________________________________________*/
+	.navbar-brand{
+		margin: 0%;
+	}
+
+	.signup-card{
+		width: 300px; 
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		padding-left: 2rem;
+		padding-right: 2rem; 
+	}
+}
+
+
+

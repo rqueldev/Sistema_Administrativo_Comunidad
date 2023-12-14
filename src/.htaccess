@@ -1,0 +1,3 @@
+Options -Indexes
+ErrorDocument 403 /NuevoProyectoDefinitivo/src/error403.html
+ErrorDocument 404 /NuevoProyectoDefinitivo/src/error404.html
