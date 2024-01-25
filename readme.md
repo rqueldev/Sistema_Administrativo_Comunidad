@@ -11,7 +11,7 @@ que también se encargará de la administración de ésta y demás procesos.
 <h2 align="left">Frontend </h2>
 <p align="left"> 
   Se emplearon las tecnologías HTML, CSS y Bootstrap (Framework Fronted). Por su parte, en la sección 
-  de visualización de datos y totalizaciones se empleo la librería Chart.js de JavaScript. 
+  de visualización de datos y totalizaciones se empleo la librería Chart.js de JavaScript para crear gráficos dinámicos e intuitivos. 
 </p>
 
 <p align="left"> 
